@@ -20,10 +20,6 @@ class WFWorkflow extends SugarBean {
 	var $module_dir = 'WFWorkflows';
 	var $importable = true;
 
-	function WFWorkflow() {
-		parent::SugarBean();
-	}
-
 	var $new_schema = true;
 
 	function get_summary_text()
@@ -115,6 +111,7 @@ if (file_exists('custom/include/Workflow/WFManager.php')) {
 }
 
 PHP;
+// $code = "";
 			$d = file_put_contents($utility_fields_file_name, $code);
 			if ($d === false) {
 				throw new Exception("Can't create file " . $utility_fields_file_name);

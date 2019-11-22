@@ -20,10 +20,6 @@ class WFModule extends SugarBean {
 	var $module_dir = 'WFModules';
 	var $importable = true;
 
-	function WFModule() {
-		parent::SugarBean();
-	}
-
 	var $new_schema = true;
 
 	function get_summary_text()

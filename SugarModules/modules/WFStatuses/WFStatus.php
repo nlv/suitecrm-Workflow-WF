@@ -68,10 +68,6 @@ class WFStatus extends SugarBean {
 	var $module_dir = 'WFStatuses';
 	var $importable = true;
 
-	function WFStatus() {
-		parent::SugarBean();
-	}
-
 	var $new_schema = true;
 
 	function get_summary_text()

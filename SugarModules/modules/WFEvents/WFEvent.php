@@ -29,10 +29,6 @@ class WFEvent extends SugarBean {
 	var $module_dir = 'WFEvents';
 	var $importable = true;
 
-	function WFEvent() {
-		parent::SugarBean();
-	}
-
 	var $new_schema = true;
 
 	function get_summary_text()

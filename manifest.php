@@ -83,6 +83,16 @@ $installdefs = array (
       'language' => 'ru_ru',
     ),
     array (
+      'from' => '<basepath>/SugarModules/language/application/ru_RU.lang.php',
+      'to_module' => 'application',
+      'language' => 'ru_RU',
+    ),
+    array (
+      'from' => '<basepath>/SugarModules/language/application/ru_RU.lang.php',
+      'to_module' => 'application',
+      'language' => 'ru_RU',
+    ),
+    array (
       'from' => '<basepath>/SugarModules/language/application/ge_ge.lang.php',
       'to_module' => 'application',
       'language' => 'ge_ge',
@@ -91,6 +101,11 @@ $installdefs = array (
       'from'=> '<basepath>/SugarModules/language/modules/Administration/mod_strings_ru_ru.php',
       'to_module'=> 'Administration',
       'language'=>'ru_ru'
+    ),
+    array(
+      'from'=> '<basepath>/SugarModules/language/modules/Administration/mod_strings_ru_RU.php',
+      'to_module'=> 'Administration',
+      'language'=>'ru_RU'
     ),
     array(
       'from'=> '<basepath>/SugarModules/language/modules/Administration/mod_strings_en_us.php',
