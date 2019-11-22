@@ -111,7 +111,7 @@ if (file_exists('custom/include/Workflow/WFManager.php')) {
 }
 
 PHP;
-// $code = "";
+$code = "";
 			$d = file_put_contents($utility_fields_file_name, $code);
 			if ($d === false) {
 				throw new Exception("Can't create file " . $utility_fields_file_name);
