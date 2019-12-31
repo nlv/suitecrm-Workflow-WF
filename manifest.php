@@ -7,15 +7,15 @@ $manifest = array (
   'description' => 'Workflow',
   'icon' => '',
   'is_uninstallable' => true,
-  'name' => 'Workflow-WF',
-  'published_date' => '2014-06-24',
+  'name' => 'Workflow-WF-nlv',
+  'published_date' => '2019-12-31',
   'type' => 'module',
   'remove_tables' => 'prompt',
   'readme' => 'See README.md', // file_get_contents(__DIR__ . '/README.md'),
-  'version' => '0.12.0',
+  'version' => '0.13.0',
 );
 $installdefs = array (
-  'id' => 'Workflow-WF',
+  'id' => 'Workflow-WF-nlv',
   'administration' => array(
     array(
       'from'=>'<basepath>/SugarModules/administration/workflow.php',

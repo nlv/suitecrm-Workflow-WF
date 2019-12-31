@@ -50,7 +50,7 @@
 
   <div class="col-xs-12 edit-view-row-item">
     <div class="col-xs-12 col-sm-4 label" data-label="LBL_RESOLUTION">
-      <label for="resolution">{sugar_translate label='LBL_RESOLUTION' module='WFWorkflows'}:</label><span class="required">*</span>
+      <label for="resolution">{sugar_translate label='LBL_RESOLUTION' module=$model->module_name}:</label><span class="required">*</span>
     </div>
     <div class="col-xs-12 col-sm-8 edit-view-field " type="text" field="resolution">
       <textarea name="resolution" id="resolution"></textarea>
@@ -63,7 +63,7 @@
     <div class="col-xs-12 col-sm-4 label">
     </div>
     <div class="col-xs-12 col-sm-8 edit-view-field " type="text" field="submit_btn">
-      <input type='submit' name='submit_btn' value='{sugar_translate label='LBL_CONFIRM_SUBMIT' module='WFWorkflows'}'
+      <input type='submit' name='submit_btn' value='{sugar_translate label='LBL_CONFIRM_SUBMIT' module=$model->module_name}'
         onclick="{if !empty($workflow.confirmData.confirmFunc)}{$workflow.confirmData.confirmFunc}('{$formName}');
           {else}lab321.wf.confirmStatus('{$formName}');{/if}return false;">
     </div>

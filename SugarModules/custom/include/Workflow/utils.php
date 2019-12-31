@@ -131,6 +131,7 @@ function wf_confirmBlock($focus, $name = null, $value = null, $view = null) {
     }
     $ss = new Sugar_Smarty();
     $ss->assign('workflow', $focus->wf_workflowData);
+    $ss->assign('model', $focus);
     return $ss->fetch('custom/include/Workflow/tpls/ConfirmBlock.tpl');
 }
 

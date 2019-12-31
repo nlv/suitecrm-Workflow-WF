@@ -237,8 +237,13 @@ lab321.wf.onChangeNewStatus = function(formName) {
         var assignedUsers = $(this).data('assignedusers');
         $(this).html('');
         if (status && assignedUsers[status] && assignedUsers[status].length > 0) {
+            var assignersCnt = $.grep(assignedUsers[status], function (i) { return i[0] != '';}).length;
             $(this).append($.map(assignedUsers[status], function(v){
-                return $('<option>', {value: v[0]}).html(v[1]).get(0);
+                var opts = {value: v[0]};
+                if (assignersCnt == 1 && v[0] != '') {
+                    opts.selected = 'selected';
+                }
+                return $('<option>', opts).html(v[1]).get(0);
             }));
         }
     });
