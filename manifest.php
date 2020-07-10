@@ -8,11 +8,11 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'Workflow-WF-nlv',
-  'published_date' => '2019-12-31',
+  'published_date' => '2020-07-08',
   'type' => 'module',
   'remove_tables' => 'prompt',
   'readme' => 'See README.md', // file_get_contents(__DIR__ . '/README.md'),
-  'version' => '0.13.0',
+  'version' => '0.14.0',
 );
 $installdefs = array (
   'id' => 'Workflow-WF-nlv',
